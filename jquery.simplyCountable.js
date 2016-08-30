@@ -3,7 +3,8 @@
 * Provides a character counter for any text input or textarea
 * 
 * @version  0.4.2
-* @homepage http://github.com/aaronrussell/jquery-simply-countable/
+* Forked repo
+* @homepage https://github.com/niciliketo/jquery-simply-countable
 * @author   Aaron Russell (http://www.aaronrussell.co.uk)
 *
 * Copyright (c) 2009-2010 Aaron Russell (aaron@gc4.co.uk)
