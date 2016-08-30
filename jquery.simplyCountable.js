@@ -75,7 +75,15 @@
           count = options.maxCount - $.trim(countable.val()).split(/\s+/).length;
           if (countable.val() === ''){ count += 1; }
         }
-        else { count = options.maxCount - countable.val().length; }
+        else {
+          var newLines = countable.val().match(/(\r\n|\n|\r)/g);
+          var addition = 0;
+          if (newLines != null) {
+            addition = newLines.length;
+          }
+          len = addition + countable.val().length;
+          count = options.maxCount - len;
+        }
         revCount = reverseCount(count);
         
         /* If strictMax set restrict further characters */
